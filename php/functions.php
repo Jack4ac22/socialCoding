@@ -18,3 +18,11 @@ function show_results($ss)
     var_dump($ss);
     echo '</pre>';
 }
+
+function comment_inputs()
+{
+    echo "<div class=\"input-group mb-3\">
+    <input type=\"text\" class=\"form-control\" placeholder=\"comment\" aria-label=\"comment\" aria-describedby=\"button-addon2\" name=\"comment\">
+    <button class=\"btn btn-outline-secondary\" type=\"button\" id=\"button-addon2\">comment</button>
+  </div>";
+}

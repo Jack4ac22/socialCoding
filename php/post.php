@@ -48,7 +48,6 @@ if (include_once("functions.php")) {
                         $title = $_POST['text'];
                         $upload_date = date('Y-m-d');
                         $query_post = "INSERT INTO posts (id, user_id, content, image, date) VALUES (NULL, $user_id, '$title', '$filePath', '$upload_date')";
-                        echo $query_post;
                         $inserting_user = mysqli_query($connect_DB, $query_post);
 
                     } else {
